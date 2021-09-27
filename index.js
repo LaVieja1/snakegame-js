@@ -8,7 +8,7 @@ class SnakePart {
     }
 }
 
-let speed = 7;
+let speed = 5;
 
 let tileCount = 20;
 let tileSize = canvas.width / tileCount - 2;
@@ -46,10 +46,10 @@ function drawGame() {
     drawScore();
 
     if(score > 2) {
-        speed = 11;
+        speed = 7;
     }
     if(score > 5) {
-        speed = 15;
+        speed = 10;
     }
 
     setTimeout(drawGame, 1000/ speed);
