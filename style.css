@@ -24,20 +24,35 @@ canvas {
 .buttons-wrapper {
     margin: 10px 0px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     flex-wrap: wrap;
-    max-width: 200px;
+    gap: 10px;
+}
+
+.up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-right {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button {
-    padding: 20px;
-    box-sizing: border-box;
-    max-width: 200px;
-    width: 40%;
-    text-align: center;
-    background-color: rgb(43, 223, 97);
-    border: rgb(0, 0, 0) 2px solid;
+    width: 10vh;
+    height: 6vh;
+    background-color: rgb(83, 218, 218);
+    border: 2px solid black;
     border-radius: 5%;
 }

@@ -12,10 +12,16 @@
     <h1>Snake</h1>
     <canvas id="game" width="400" height="400"></canvas>
     <div class="buttons-wrapper">
-        <button id="up" class="button">Up</button>
-        <button id="down" class="button">Down</button>
+        <div class="up">
+            <button id="up" class="button">Up</button>
+        </div>
+        <div class="left-right">
         <button id="left" class="button">Left</button>
         <button id="right" class="button">Right</button>
+        </div>
+        <div class="down">
+            <button id="down" class="button">Down</button>
+        </div>
     </div>
     <button class="reiniciar" onClick="window.location.reload();">Reiniciar</button> 
     <script src="index.js"></script>
