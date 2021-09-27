@@ -11,12 +11,33 @@ canvas {
     box-shadow: black 20px 10px 50px;
 }
 
-button {
-    margin: 50px;
-    width: 15%;
+.reiniciar{
+    margin: 20px;
+    width: 30vh;
     padding: 10px;
     background-color: rgb(123, 194, 114);
     border: black 2px solid;
     color: white;
     font-size: 24px;
+}
+
+.buttons-wrapper {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 200px;
+}
+
+.button {
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 200px;
+    width: 40%;
+    text-align: center;
+    background-color: rgb(43, 223, 97);
+    border: rgb(0, 0, 0) 2px solid;
+    border-radius: 5%;
 }

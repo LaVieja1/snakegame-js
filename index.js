@@ -179,7 +179,7 @@ function keyDown(event) {
         xVelocity = -1;
     }
 
-    //left
+    //right
     if(event.keyCode == 39) {
         if(xVelocity == -1)
             return;
@@ -187,6 +187,39 @@ function keyDown(event) {
         xVelocity = 1;
     }
 }
+
+//BUTTON SUPPORT
+//UP
+document.getElementById("up").addEventListener('click', function() {
+    if(yVelocity == 1)
+        return;
+    yVelocity = -1;
+    xVelocity = 0;
+});
+
+//DOWN
+document.getElementById("down").addEventListener('click', function() {
+    if(yVelocity == -1)
+    return;
+    yVelocity = 1;
+    xVelocity = 0;
+});
+
+//LEFT
+document.getElementById("left").addEventListener('click', function() {
+    if(xVelocity == 1)
+    return;
+    yVelocity = 0;
+    xVelocity = -1;
+});
+
+//RIGHT
+document.getElementById("right").addEventListener('click', function() {
+    if(xVelocity == -1)
+    return;
+    yVelocity = 0;
+    xVelocity = 1;
+});
 
 drawGame();
 
